@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vistara | Actualización</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1220;
+color:white;
+overflow-x:hidden;
+}
+
+/* Fondo animado */
+
+body::before{
+content:"";
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,140,255,.15),transparent 35%),
+radial-gradient(circle at 80% 10%,rgba(0,255,255,.12),transparent 35%),
+radial-gradient(circle at 50% 80%,rgba(0,80,255,.20),transparent 40%);
+animation:fondo 18s infinite alternate;
+z-index:-2;
+}
+
+@keyframes fondo{
+
+0%{
+transform:scale(1);
+}
+
+100%{
+transform:scale(1.2) rotate(5deg);
+}
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+position:fixed;
+left:0;
+top:0;
+width:250px;
+height:100%;
+background:rgba(18,26,44,.82);
+backdrop-filter:blur(20px);
+padding:25px;
+overflow:auto;
+box-shadow:0 0 40px rgba(0,0,0,.5);
+
+}
+
+.logo{
+
+font-size:35px;
+font-weight:bold;
+text-align:center;
+margin-bottom:30px;
+
+}
+
+.logo span{
+
+color:#3da6ff;
+
+}
+
+.sidebar a{
+
+display:block;
+text-decoration:none;
+color:white;
+padding:14px;
+margin:7px 0;
+border-radius:10px;
+transition:.30s;
+
+}
+
+.sidebar a:hover{
+
+background:#2196f3;
+transform:translateX(8px);
+
+}
+
+/* CONTENIDO */
+
+.content{
+
+margin-left:270px;
+
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:70px;
+margin-bottom:15px;
+animation:zoom 1s;
+
+}
+
+.hero p{
+
+font-size:22px;
+color:#d6d6d6;
+
+}
+
+.hero button{
+
+margin-top:35px;
+padding:18px 50px;
+font-size:18px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+background:#2196f3;
+color:white;
+transition:.4s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.1);
+box-shadow:0 0 25px #2196f3;
+
+}
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+transform:scale(.5);
+
+}
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+}
+
+section{
+
+padding:90px 50px;
+
+}
+
+section h2{
+
+font-size:42px;
+margin-bottom:35px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(18px);
+padding:25px;
+border-radius:20px;
+transition:.35s;
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 0 30px rgba(33,150,243,.4);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#42a5f5;
+
+}
+
+.card ul{
+
+padding-left:18px;
+
+}
+
+.card li{
+
+margin:8px 0;
+
+}
+
+footer{
+
+padding:70px;
+text-align:center;
+font-size:18px;
+background:#111827;
+
+}
+
+.progress{
+
+position:fixed;
+top:0;
+left:0;
+height:5px;
+background:#2196f3;
+width:0%;
+z-index:999;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="sidebar">
+
+<div class="logo">
+
+🚀 <span>Vistara</span>
+
+</div>
+
+<a href="#inicio">🏠 Inicio</a>
+<a href="#novedades">✨ Novedades</a>
+<a href="#mensajeria">💬 Mensajería</a>
+<a href="#personalizacion">🎨 Personalización</a>
+<a href="#explorar">🌍 Descubrimiento</a>
+<a href="#ia">🤖 Inteligencia Artificial</a>
+<a href="#seguridad">🛡 Seguridad</a>
+<a href="#vistara">🌟 Exclusivas</a>
+<a href="#perfil">📊 Perfil</a>
+<a href="#reportes">🚨 Reportes</a>
+<a href="#rendimiento">⚡ Rendimiento</a>
+
+</div>
+
+<div class="content">
+
+<section class="hero" id="inicio">
+
+<h1>🚀 Vistara</h1>
+
+<p>
+
+La actualización más grande hasta el momento.
+
+</p>
+
+<button onclick="document.getElementById('novedades').scrollIntoView({behavior:'smooth'})">
+
+Explorar Actualización
+
+</button>
+
+</section>
+
+<section id="novedades">
+
+<h2>✨ Novedades</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📸 Stories</h3>
+
+<ul>
+
+<li>Encuestas</li>
+
+<li>Preguntas</li>
+
+<li>Más interacción</li>
+
+<li>Compartir con amigos</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🎬 Reels</h3>
+
+<ul>
+
+<li>Editor avanzado</li>
+
+<li>Filtros</li>
+
+<li>Música</li>
+
+<li>Stickers</li>
+
+<li>Texto</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🖼 Publicaciones</h3>
+
+<ul>
+
+<li>Carruseles</li>
+
+<li>Programadas</li>
+
+<li>Colaborativas</li>
+
+<li>Solo amigos</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="mensajeria">
+
+<h2>💬 Mensajería</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Chats</h3>
+
+<ul>
+
+<li>Grupales</li>
+
+<li>Secretos</li>
+
+<li>Editables</li>
+
+<li>Temporales</li>
+
+<li>Fijados</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Videollamadas</h3>
+
+<ul>
+
+<li>Compartir pantalla</li>
+
+<li>Audio HD</li>
+
+<li>Reacciones</li>
+
+<li>Transcripción</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="personalizacion">
+
+<h2>🎨 Personalización</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Tu Perfil</h3>
+
+<ul>
+
+<li>Música</li>
+
+<li>Temas</li>
+
+<li>Marcos</li>
+
+<li>Fondos</li>
+
+<li>Avatares</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="explorar">
+
+<h2>🌍 Descubrimiento</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Explorar</h3>
+
+<ul>
+
+<li>Tendencias</li>
+
+<li>Mapa Social</li>
+
+<li>Eventos</li>
+
+<li>Hashtags</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="ia">
+
+<h2>🤖 Inteligencia Artificial</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>IA integrada</h3>
+
+<ul>
+
+<li>Escribir publicaciones</li>
+
+<li>Traducir</li>
+
+<li>Detectar spam</li>
+
+<li>Subtítulos</li>
+
+<li>Resumen de comentarios</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="seguridad">
+
+<h2>🛡 Seguridad</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Protección</h3>
+
+<ul>
+
+<li>2FA</li>
+
+<li>Historial</li>
+
+<li>Cierre remoto</li>
+
+<li>Alertas</li>
+
+<li>Controles parentales</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="vistara">
+
+<h2>🌟 Exclusivas</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Funciones únicas</h3>
+
+<ul>
+
+<li>Universos</li>
+
+<li>Modo Duo</li>
+
+<li>Diario Privado</li>
+
+<li>Mascota Virtual</li>
+
+<li>Misiones</li>
+
+<li>Rachas</li>
+
+<li>Cápsula del Tiempo</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="perfil">
+
+<h2>📊 Perfil</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Nuevo Perfil</h3>
+
+<ul>
+
+<li>URL Personalizada</li>
+
+<li>Estadísticas</li>
+
+<li>Actividad</li>
+
+<li>Publicaciones fijadas</li>
+
+<li>Enlaces</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="reportes">
+
+<h2>🚨 Sistema de Reportes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Moderación</h3>
+
+<p>
+
+Cuando un usuario reporta una publicación, Story o Reel,
+los administradores reciben una notificación privada con:
+
+</p>
+
+<br>
+
+<ul>
+
+<li>Usuario reportante</li>
+
+<li>Motivo</li>
+
+<li>Fecha</li>
+
+<li>Vista previa</li>
+
+<li>Eliminar</li>
+
+<li>Ignorar</li>
+
+<li>Suspender</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="rendimiento">
+
+<h2>⚡ Rendimiento</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Optimización</h3>
+
+<ul>
+
+<li>35% más rápido</li>
+
+<li>Menos batería</li>
+
+<li>Menos memoria</li>
+
+<li>Mayor estabilidad</li>
+
+<li>Animaciones fluidas</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>❤️ Gracias por usar Vistara</h2>
+
+<br>
+
+<p>
+
+Seguiremos trabajando para hacer de Vistara una red social cada vez mejor.
+
+</p>
+
+</footer>
+
+</div>
+
+<script>
+
+window.onscroll=function(){
+
+let scrollTop=document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+
+document.getElementById("progress").style.width=(scrollTop/height*100)+"%";
+
+}
+
+// Animación de aparición
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:"translateY(50px)"},
+
+{opacity:1,transform:"translateY(0)"}
+
+],{
+
+duration:700,
+
+fill:"forwards"
+
+});
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.opacity="0";
+
+observer.observe(card);
+
+});
+
+</script>
+
+</body>
+</html>
